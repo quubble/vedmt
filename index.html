@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vedic Maths Premium</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vedic Maths Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -30,83 +30,94 @@
 
 <!-- MULTIPLICATION -->
 <section id="multiplication">
-  <h2>Multiplication</h2>
+  <h2>Multiplication Tricks</h2>
   <div class="grid">
+
     <div class="glass card">
-      <h3>Nikhilam Method</h3>
-      <p>Best for numbers near base (100, 1000)</p>
-      <button onclick="toggle(this)">Show Example</button>
-      <p class="hidden">98 × 97 = 9506</p>
+      <h3>Base Method</h3>
+      <button onclick="toggle(this)">Show</button>
+      <div class="hidden">
+        <p>98 × 97</p>
+        <p>Base = 100</p>
+        <p>98 - 03 = 95</p>
+        <p>2 × 3 = 06</p>
+        <b>Answer = 9506</b>
+      </div>
     </div>
 
     <div class="glass card">
-      <h3>Urdhva Tiryagbhyam</h3>
-      <p>Vertical & Crosswise method</p>
-      <button onclick="toggle(this)">Show Example</button>
-      <p class="hidden">23 × 14 = 322</p>
+      <h3>Above Base</h3>
+      <button onclick="toggle(this)">Show</button>
+      <div class="hidden">
+        <p>12 × 13</p>
+        <p>12 + 3 = 15</p>
+        <p>2 × 3 = 6</p>
+        <b>Answer = 156</b>
+      </div>
     </div>
+
+    <div class="glass card">
+      <h3>Crosswise Method</h3>
+      <button onclick="toggle(this)">Show</button>
+      <div class="hidden">
+        <p>12 × 43</p>
+        <p>2×3 = 6</p>
+        <p>(1×3 + 2×4) = 11</p>
+        <p>1×4 + 1 = 5</p>
+        <b>Answer = 516</b>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <!-- ADDITION -->
 <section id="addition">
-  <h2>Addition</h2>
+  <h2>Addition Tricks</h2>
   <div class="grid">
     <div class="glass card">
       <h3>Left to Right</h3>
       <button onclick="toggle(this)">Show</button>
-      <p class="hidden">567 + 234 = 801</p>
-    </div>
-
-    <div class="glass card">
-      <h3>Complement Method</h3>
-      <button onclick="toggle(this)">Show</button>
-      <p class="hidden">499 + 501 = 1000</p>
+      <div class="hidden">
+        <p>567 + 234 = 801</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- SUBTRACTION -->
 <section id="subtraction">
-  <h2>Subtraction</h2>
+  <h2>Subtraction Tricks</h2>
   <div class="grid">
     <div class="glass card">
       <h3>All from 9</h3>
       <button onclick="toggle(this)">Show</button>
-      <p class="hidden">1000 - 456 = 544</p>
+      <div class="hidden">
+        <p>1000 - 456 = 544</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- DIVISION -->
 <section id="division">
-  <h2>Division</h2>
+  <h2>Division Tricks</h2>
   <div class="grid">
     <div class="glass card">
-      <h3>Nikhilam Division</h3>
+      <h3>Basic Division</h3>
       <button onclick="toggle(this)">Show</button>
-      <p class="hidden">144 ÷ 12 = 12</p>
+      <div class="hidden">
+        <p>144 ÷ 12 = 12</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- QUIZ -->
-<section id="quiz">
-  <h2>Practice Quiz</h2>
-  <div class="glass quiz-box">
-    <p id="question"></p>
-    <input id="answer">
-    <button onclick="checkQuiz()">Submit</button>
-    <p id="result"></p>
-  </div>
-</section>
-
 <footer>
-  <p>© 2026 Vedic Maths Premium</p>
+  <p>© 2026 Vedic Maths</p>
 </footer>
 
 <script src="js/scripts.js"></script>
 </body>
 </html>
-
 
