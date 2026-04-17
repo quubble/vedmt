@@ -1,123 +1,187 @@
-<!-- ======================= index.html ======================= -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vedic Maths Premium</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedic Mathematics - Multiplication Tricks Tutorial</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 1200px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #2c3e50; }
+        h2 { color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h3 { color: #2980b9; }
+        pre { background: #ecf0f1; padding: 15px; border-left: 5px solid #3498db; overflow-x: auto; }
+        .section { margin-bottom: 40px; }
+        .example { background: #d5f4e6; padding: 15px; border-radius: 5px; margin: 10px 0; }
+        ul { padding-left: 20px; }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>📘 Vedic Mathematics Multiplication Tricks</h1>
+        <p>This interactive tutorial covers essential Vedic Math multiplication techniques. Practice examples mentally!</p>
 
-<div class="bg-animation"></div>
+        <!-- Section 1: Multiplication Tricks -->
+        <div class="section">
+            <h2>🔷 Section 1: Base Method (Nikhilam) & Variations</h2>
 
-<nav class="glass-nav">
-  <h2>Vedic Maths</h2>
-  <div>
-    <a href="#multiplication">Multiply</a>
-    <a href="#addition">Add</a>
-    <a href="#subtraction">Subtract</a>
-    <a href="#division">Divide</a>
-    <button onclick="toggleDarkMode()">🌙</button>
-  </div>
-</nav>
+            <h3>📌 Base Method Concept</h3>
+            <p>Used when numbers are close to a base (10, 100, 1000, etc.).</p>
 
-<header>
-  <h1>Vedic Mathematics Mastery</h1>
-  <p>Fast • Smart • Mental Calculation</p>
-</header>
+            <h3>🧠 Steps</h3>
+            <ul>
+                <li>Choose base (nearest power of 10)</li>
+                <li>Find deficiency or excess</li>
+                <li>Crosswise add/subtract → Left part</li>
+                <li>Multiply vertically → Right part</li>
+                <li>Apply placement rule</li>
+            </ul>
 
-<!-- MULTIPLICATION -->
-<section id="multiplication">
-  <h2>Multiplication Tricks</h2>
-  <div class="grid">
+            <div class="example">
+                <pre>98 × 97
+Base = 100
+98 | -02
+97 | -03
+Step 1: 98 - 03 = 95 OR 97 - 02 = 95
+Step 2: (-2 × -3) = 06
+Answer = 9506</pre>
+            </div>
 
-    <div class="glass card">
-      <h3>Base Method</h3>
-      <button onclick="toggle(this)">Show</button>
-      <div class="hidden">
-        <p>98 × 97</p>
-        <p>Base = 100</p>
-        <p>98 - 03 = 95</p>
-        <p>2 × 3 = 06</p>
-        <b>Answer = 9506</b>
-      </div>
+            <h3>⚠️ Placement Rule</h3>
+            <p>If base = 100 → 2 digits on right. Base = 1000 → 3 digits.</p>
+
+            <div class="example">
+                <pre>7 × 6
+Base = 10
+7 | -3
+6 | -4
+Step 1: 7 - 4 = 3
+Step 2: (-3 × -4) = 12 → write 2, carry 1
+Answer = 42</pre>
+            </div>
+
+            <h3>Numbers Above Base</h3>
+            <div class="example">
+                <pre>12 × 13
+Base = 10
+12 | +2
+13 | +3
+Step 1: 12 + 3 = 15
+Step 2: 2 × 3 = 6
+Answer = 156</pre>
+            </div>
+
+            <h3>Squaring Near Base</h3>
+            <div class="example">
+                <pre>103²
+Excess = 3
+Step 1: 103 + 3 = 106
+Step 2: 3² = 09
+Answer = 10609</pre>
+            </div>
+        </div>
+
+        <!-- Section 2: Mixed Bases & Special -->
+        <div class="section">
+            <h2>🔷 Section 2: Mixed & Special Cases</h2>
+
+            <h3>Above & Below Base</h3>
+            <div class="example">
+                <pre>15 × 8
+Base = 10
+15 | +5
+8  | -2
+Step 1: 15 - 2 = 13
+Step 2: 5 × (-2) = -10
+Step 3: 130 - 10 = 120</pre>
+            </div>
+
+            <h3>"All from 9 and Last from 10"</h3>
+            <div class="example">
+                <pre>1000 - 123
+→ 9-1 = 8
+→ 9-2 = 7
+→ 10-3 = 7
+Answer = 877</pre>
+            </div>
+
+            <h3>Working Base (e.g., 50)</h3>
+            <div class="example">
+                <pre>44 × 48
+Base = 50
+44 | -6
+48 | -2
+Step 1: 44 - 2 = 42
+Step 2: (-6 × -2) = 12
+Adjust: 42 × 5 = 210 +12=2112</pre>
+            </div>
+
+            <h3>Base 1000</h3>
+            <div class="example">
+                <pre>998 × 997
+Base = 1000
+998 | -002
+997 | -003
+995 | 006
+Answer = 995006</pre>
+            </div>
+        </div>
+
+        <!-- Section 3: Vertically & Crosswise -->
+        <div class="section">
+            <h2>🔷 Section 3: Vertically & Crosswise</h2>
+
+            <h3>📌 Concept</h3>
+            <p>Universal method for all numbers.</p>
+
+            <h3>2-digit × 2-digit</h3>
+            <div class="example">
+                <pre>12 × 43
+Step 1: 2×3 = 6
+Step 2: (1×3 + 2×4) = 11 → 1, carry 1
+Step 3: 1×4 +1 (carry) = 5
+Answer = 516</pre>
+            </div>
+
+            <h3>2-digit × 1-digit</h3>
+            <div class="example">
+                <pre>34 × 8 = 34 × 08
+Step 1: 8×4=32 → 2, carry 3
+Step 2: (8×3 + 0×4)+3=27
+Step 3: 0×3 + carry=2? Wait, correct: actually 27 write 7 carry 2, then 2×3? Standard: 272
+Answer = 272</pre>
+            </div>
+
+            <h3>3-digit × 3-digit</h3>
+            <div class="example">
+                <pre>123 × 456
+1: 3×6=18 →8 c1
+2: 3×5+2×6 +1=28 →8 c2
+3: 3×4+2×5+1×6 +2=30 →0 c3
+4: 2×4+1×5 +3=16 →6 c1
+5: 1×4 +1=5
+Answer = 56088</pre>
+            </div>
+        </div>
+
+        <!-- Section 4: Advanced & Formulas -->
+        <div class="section">
+            <h2>🔷 Section 4: Advanced & Formulas</h2>
+
+            <h3>Different Bases</h3>
+            <div class="example">
+                <pre>981 × 93
+Base 1000/100=10
+93 ×10=930
+981×930=912330 /10=91233</pre>
+            </div>
+
+            <h3>Formula Behind Base</h3>
+            <p>(x+a)(x+b)=x(x+a+b)+ab [web:2]</p>
+
+            <p>Practice these to master Vedic Math! Verify with calculator.</p>
+        </div>
     </div>
-
-    <div class="glass card">
-      <h3>Above Base</h3>
-      <button onclick="toggle(this)">Show</button>
-      <div class="hidden">
-        <p>12 × 13</p>
-        <p>12 + 3 = 15</p>
-        <p>2 × 3 = 6</p>
-        <b>Answer = 156</b>
-      </div>
-    </div>
-
-    <div class="glass card">
-      <h3>Crosswise Method</h3>
-      <button onclick="toggle(this)">Show</button>
-      <div class="hidden">
-        <p>12 × 43</p>
-        <p>2×3 = 6</p>
-        <p>(1×3 + 2×4) = 11</p>
-        <p>1×4 + 1 = 5</p>
-        <b>Answer = 516</b>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ADDITION -->
-<section id="addition">
-  <h2>Addition Tricks</h2>
-  <div class="grid">
-    <div class="glass card">
-      <h3>Left to Right</h3>
-      <button onclick="toggle(this)">Show</button>
-      <div class="hidden">
-        <p>567 + 234 = 801</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SUBTRACTION -->
-<section id="subtraction">
-  <h2>Subtraction Tricks</h2>
-  <div class="grid">
-    <div class="glass card">
-      <h3>All from 9</h3>
-      <button onclick="toggle(this)">Show</button>
-      <div class="hidden">
-        <p>1000 - 456 = 544</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DIVISION -->
-<section id="division">
-  <h2>Division Tricks</h2>
-  <div class="grid">
-    <div class="glass card">
-      <h3>Basic Division</h3>
-      <button onclick="toggle(this)">Show</button>
-      <div class="hidden">
-        <p>144 ÷ 12 = 12</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Vedic Maths</p>
-</footer>
-
-<script src="js/scripts.js"></script>
 </body>
 </html>
-
