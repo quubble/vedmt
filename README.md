@@ -1,4 +1,4 @@
-
+https://quubble.github.io/vedmt/
 Here is a **clean extraction of ALL important Vedic Maths multiplication tricks** from your uploaded text, structured and ready to **paste directly into your website**.
 
 I’ve removed stories and kept only **usable learning content + methods + steps + examples**.
