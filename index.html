@@ -1,0 +1,112 @@
+<!-- ======================= index.html ======================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vedic Maths Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-animation"></div>
+
+<nav class="glass-nav">
+  <h2>Vedic Maths</h2>
+  <div>
+    <a href="#multiplication">Multiply</a>
+    <a href="#addition">Add</a>
+    <a href="#subtraction">Subtract</a>
+    <a href="#division">Divide</a>
+    <button onclick="toggleDarkMode()">🌙</button>
+  </div>
+</nav>
+
+<header>
+  <h1>Vedic Mathematics Mastery</h1>
+  <p>Fast • Smart • Mental Calculation</p>
+</header>
+
+<!-- MULTIPLICATION -->
+<section id="multiplication">
+  <h2>Multiplication</h2>
+  <div class="grid">
+    <div class="glass card">
+      <h3>Nikhilam Method</h3>
+      <p>Best for numbers near base (100, 1000)</p>
+      <button onclick="toggle(this)">Show Example</button>
+      <p class="hidden">98 × 97 = 9506</p>
+    </div>
+
+    <div class="glass card">
+      <h3>Urdhva Tiryagbhyam</h3>
+      <p>Vertical & Crosswise method</p>
+      <button onclick="toggle(this)">Show Example</button>
+      <p class="hidden">23 × 14 = 322</p>
+    </div>
+  </div>
+</section>
+
+<!-- ADDITION -->
+<section id="addition">
+  <h2>Addition</h2>
+  <div class="grid">
+    <div class="glass card">
+      <h3>Left to Right</h3>
+      <button onclick="toggle(this)">Show</button>
+      <p class="hidden">567 + 234 = 801</p>
+    </div>
+
+    <div class="glass card">
+      <h3>Complement Method</h3>
+      <button onclick="toggle(this)">Show</button>
+      <p class="hidden">499 + 501 = 1000</p>
+    </div>
+  </div>
+</section>
+
+<!-- SUBTRACTION -->
+<section id="subtraction">
+  <h2>Subtraction</h2>
+  <div class="grid">
+    <div class="glass card">
+      <h3>All from 9</h3>
+      <button onclick="toggle(this)">Show</button>
+      <p class="hidden">1000 - 456 = 544</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIVISION -->
+<section id="division">
+  <h2>Division</h2>
+  <div class="grid">
+    <div class="glass card">
+      <h3>Nikhilam Division</h3>
+      <button onclick="toggle(this)">Show</button>
+      <p class="hidden">144 ÷ 12 = 12</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+  <h2>Practice Quiz</h2>
+  <div class="glass quiz-box">
+    <p id="question"></p>
+    <input id="answer">
+    <button onclick="checkQuiz()">Submit</button>
+    <p id="result"></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Vedic Maths Premium</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
